@@ -7,11 +7,13 @@ public class CuidarPerro : MonoBehaviour
     [SerializeField] private GameObject perro;
     private LayerMask layer;
     [SerializeField] private Camera aRCamera;
-    //[SerializeField] private bool necesidades;
+    private Animator animacionPerro;
+    private bool hacerCosas;
 
     void Start()
     {
         layer = LayerMask.GetMask("dog");
+        hacerCosas = true;
     }
     void Update()
     {
@@ -31,6 +33,7 @@ public class CuidarPerro : MonoBehaviour
                     // Si el raycast golpea el perro (el objeto con el collider)
                     Debug.Log("ME TOCASTE :O");
                     DogAction(hit.transform.gameObject);  // Llamar a la acción en el perro
+
                 }
             }
         }
@@ -38,9 +41,11 @@ public class CuidarPerro : MonoBehaviour
 
     public void Alimentar()
     {
-        if (perro.GetComponent<Necesidades>().alimentar == true)
+        if (perro.GetComponent<Necesidades>().alimentar == true && hacerCosas == true)
         {
+            hacerCosas = false;
             Debug.Log("Perro come jaja");
+            StartCoroutine(animaciones(5));
             perro.GetComponent<Necesidades>().alimentar = false;
         }
         else
@@ -51,10 +56,12 @@ public class CuidarPerro : MonoBehaviour
 
     public void Bañar()
     {
-        if (perro.GetComponent<Necesidades>().baniar == true)
+        if (perro.GetComponent<Necesidades>().baniar == true && hacerCosas == true)
         {
             Debug.Log("Limpioo");
             perro.GetComponent<Necesidades>().baniar = false;
+            hacerCosas = false;
+            StartCoroutine(animaciones(6));
         }
         else
         {
@@ -64,10 +71,12 @@ public class CuidarPerro : MonoBehaviour
 
     public void Curar()
     {
-        if (perro.GetComponent<Necesidades>().sanar == true)
+        if (perro.GetComponent<Necesidades>().sanar == true && hacerCosas == true)
         {
             Debug.Log("sano");
             perro.GetComponent<Necesidades>().sanar = false;
+            hacerCosas = false;
+            StartCoroutine(animaciones(7));
         }
         else
         {
@@ -77,9 +86,11 @@ public class CuidarPerro : MonoBehaviour
 
     public void Acariciar()
     {
-        if (perro.GetComponent<Necesidades>().acariciar == true)
+        if (perro.GetComponent<Necesidades>().acariciar == true && hacerCosas == true)
         {
-            Debug.Log("Bune perrito");
+            Debug.Log("Buen perrito");
+            hacerCosas = false;
+            StartCoroutine(animaciones(1));
             perro.GetComponent<Necesidades>().acariciar = false;
         }
         else
@@ -91,5 +102,14 @@ public class CuidarPerro : MonoBehaviour
     private void DogAction(GameObject dog)
     {
         perro = dog;
+        animacionPerro = perro.GetComponent<Animator>();
+    }
+
+    IEnumerator animaciones(int numeroID)
+    {
+        animacionPerro.SetInteger("AnimationID", numeroID);
+        yield return new WaitForSeconds(2f);
+        animacionPerro.SetInteger("AnimationID", 0);
+        hacerCosas = true;
     }
 }
