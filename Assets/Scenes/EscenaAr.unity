@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 32925682}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1677913329}
+        m_TargetAssemblyTypeName: CuidarPerro, Assembly-CSharp
+        m_MethodName: "Ba\xF1ar"
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &32925682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1815,7 +1827,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1169362741}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1677913329}
+        m_TargetAssemblyTypeName: CuidarPerro, Assembly-CSharp
+        m_MethodName: Alimentar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1169362741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2055,7 +2079,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1413578746}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1677913329}
+        m_TargetAssemblyTypeName: CuidarPerro, Assembly-CSharp
+        m_MethodName: Acariciar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1413578746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2592,13 +2628,14 @@ GameObject:
   - component: {fileID: 1677913328}
   - component: {fileID: 1677913327}
   - component: {fileID: 1677913326}
+  - component: {fileID: 1677913329}
   m_Layer: 5
   m_Name: Acciones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1677913326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2660,6 +2697,18 @@ RectTransform:
   m_AnchoredPosition: {x: -400, y: 115.684}
   m_SizeDelta: {x: 884.65, y: 162.411}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1677913329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677913325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7696be63f86b1c84db4552dabecd0021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1784802105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3195,7 +3244,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1867919294}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1677913329}
+        m_TargetAssemblyTypeName: CuidarPerro, Assembly-CSharp
+        m_MethodName: Curar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1867919294
 MonoBehaviour:
   m_ObjectHideFlags: 0
