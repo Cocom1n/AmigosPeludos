@@ -33,6 +33,7 @@ public class SelectDog : MonoBehaviour
                 {
                     // Si el raycast golpea el perro (el objeto con el collider)
                     DogAction(hit.transform.gameObject);  // Llamar a la acción en el perro
+                    Debug.Log("ME TOCASTE :O");
                 }
             }
         }
@@ -43,13 +44,13 @@ public class SelectDog : MonoBehaviour
     {
         if (actionsVisible == false)
         {
-            Debug.Log("¡El perro ha sido tocado!");
+            //Debug.Log("¡El perro ha sido tocado!");
             actions.SetActive(true);
             actionsVisible = true;
         }
         else if (actionsVisible == true) 
         {
-            Debug.Log("¡El perro ha sido tocado!");
+            //Debug.Log("¡El perro ha sido tocado!");
             actions.SetActive(false);
             actionsVisible = false;
         }

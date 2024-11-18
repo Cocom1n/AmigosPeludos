@@ -119,8 +119,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3862829661469340043, guid: 013fa0d55df1c3841b8c569db9dd1ba6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3173660536637813294}
   m_SourcePrefab: {fileID: 100100000, guid: 013fa0d55df1c3841b8c569db9dd1ba6, type: 3}
+--- !u!1 &3738144699860618180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3862829661469340043, guid: 013fa0d55df1c3841b8c569db9dd1ba6, type: 3}
+  m_PrefabInstance: {fileID: 466977779306166863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3173660536637813294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3738144699860618180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca32b3f7cf0a77d478c8db725e2d9d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alimentar: 0
+  acariciar: 0
+  baniar: 0
+  sanar: 0
+  nombre: mimitchi
 --- !u!4 &4083461253828432254 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4526214043178412849, guid: 013fa0d55df1c3841b8c569db9dd1ba6, type: 3}
@@ -205,13 +230,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6544990386230654568, guid: cbd015c8392edc84097e8e4de87a9d0a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8613188698774580455}
   m_SourcePrefab: {fileID: 100100000, guid: cbd015c8392edc84097e8e4de87a9d0a, type: 3}
 --- !u!4 &4701651418511744779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6191479115475244193, guid: cbd015c8392edc84097e8e4de87a9d0a, type: 3}
   m_PrefabInstance: {fileID: 1500563431646579626}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5622577464130911682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6544990386230654568, guid: cbd015c8392edc84097e8e4de87a9d0a, type: 3}
+  m_PrefabInstance: {fileID: 1500563431646579626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8613188698774580455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5622577464130911682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca32b3f7cf0a77d478c8db725e2d9d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alimentar: 0
+  acariciar: 0
+  baniar: 0
+  sanar: 0
+  nombre: mike
 --- !u!1001 &1843221505775259599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -291,13 +341,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7105132547998492349, guid: 58ced539c013dab46a8a4af281cd1184, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 902429778847012159}
   m_SourcePrefab: {fileID: 100100000, guid: 58ced539c013dab46a8a4af281cd1184, type: 3}
 --- !u!4 &4868761814936654779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6486627271385898100, guid: 58ced539c013dab46a8a4af281cd1184, type: 3}
   m_PrefabInstance: {fileID: 1843221505775259599}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8867288985468954994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7105132547998492349, guid: 58ced539c013dab46a8a4af281cd1184, type: 3}
+  m_PrefabInstance: {fileID: 1843221505775259599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &902429778847012159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8867288985468954994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca32b3f7cf0a77d478c8db725e2d9d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alimentar: 0
+  acariciar: 0
+  baniar: 0
+  sanar: 0
+  nombre: frank
 --- !u!1001 &1933424725761302112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -381,6 +456,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3925358294965130716, guid: 3568ea2e97a164d43a0c334ab62e8694, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1392699810363570490}
+    - targetCorrespondingSourceObject: {fileID: 3925358294965130716, guid: 3568ea2e97a164d43a0c334ab62e8694, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1682850586655042780}
   m_SourcePrefab: {fileID: 100100000, guid: 3568ea2e97a164d43a0c334ab62e8694, type: 3}
 --- !u!4 &2552201562799532919 stripped
 Transform:
@@ -413,6 +491,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31923696, y: 0.55398655, z: 0.65251327}
   m_Center: {x: -0.010297931, y: 0.2716688, z: 0.05671907}
+--- !u!114 &1682850586655042780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3219311880349813692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca32b3f7cf0a77d478c8db725e2d9d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alimentar: 0
+  acariciar: 0
+  baniar: 0
+  sanar: 0
+  nombre: perro
 --- !u!1001 &4499303151638722403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -488,10 +583,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6036331658564139559, guid: adb11d902b2436d428d60c75729665a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8769868293050839025}
   m_SourcePrefab: {fileID: 100100000, guid: adb11d902b2436d428d60c75729665a6, type: 3}
 --- !u!4 &7421430143146530814 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6381190578936783005, guid: adb11d902b2436d428d60c75729665a6, type: 3}
   m_PrefabInstance: {fileID: 4499303151638722403}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7905479573894090052 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6036331658564139559, guid: adb11d902b2436d428d60c75729665a6, type: 3}
+  m_PrefabInstance: {fileID: 4499303151638722403}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8769868293050839025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7905479573894090052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca32b3f7cf0a77d478c8db725e2d9d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alimentar: 0
+  acariciar: 0
+  baniar: 0
+  sanar: 0
+  nombre: papu
