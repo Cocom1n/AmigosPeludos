@@ -10,6 +10,10 @@ public class Necesidades : MonoBehaviour
     public bool baniar;
     public bool sanar;
     public string nombre;
+    [SerializeField] private GameObject globitoAlimentar;
+    [SerializeField] private GameObject globitoAcariciar;
+    [SerializeField] private GameObject globitoBaniar;
+    [SerializeField] private GameObject globitoSanar;
 
     void Start()
     {
@@ -36,7 +40,7 @@ public class Necesidades : MonoBehaviour
                 sanar = true;
                 break;
 
-            case "mimitchi":
+            case "corgi":
                 alimentar = false;
                 acariciar = false;
                 baniar = true;
@@ -53,7 +57,41 @@ public class Necesidades : MonoBehaviour
     }
     void Update()
     {
-        
+        if (alimentar == true)
+        {
+            globitoAlimentar.SetActive(true);
+        }
+        else
+        {
+            globitoAlimentar.SetActive(false);
+        }
+
+        if (acariciar == true)
+        {
+            globitoAcariciar.SetActive(true);
+        }
+        else
+        {
+            globitoAcariciar.SetActive(false);
+        }
+
+        if (baniar == true)
+        {
+            globitoBaniar.SetActive(true);
+        }
+        else
+        {
+            globitoBaniar.SetActive(false);
+        }
+
+        if (sanar == true)
+        {
+            globitoSanar.SetActive(true);
+        }
+        else
+        {
+            globitoSanar.SetActive(false);
+        }
     }
 
 }

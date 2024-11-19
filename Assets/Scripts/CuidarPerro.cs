@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class CuidarPerro : MonoBehaviour
@@ -14,6 +15,7 @@ public class CuidarPerro : MonoBehaviour
     {
         layer = LayerMask.GetMask("dog");
         hacerCosas = true;
+        aRCamera = GameObject.Find("XR Origin").GetComponentInChildren<Camera>();
     }
     void Update()
     {

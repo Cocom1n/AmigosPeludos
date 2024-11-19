@@ -13,6 +13,7 @@ public class SelectDog : MonoBehaviour
     {
         dogLayer = LayerMask.GetMask("dog");
         actionsVisible = false;
+        aRCamera = GameObject.Find("XR Origin").GetComponentInChildren<Camera>();
     }
 
     // Update is called once per frame
