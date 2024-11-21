@@ -12,7 +12,6 @@ public class PlaneManager : MonoBehaviour
 
     private List<ARPlane> planes = new List<ARPlane>();
     private GameObject modelPlaced;
-    // Start is called before the first frame update
 
     private void OnEnable()
     {

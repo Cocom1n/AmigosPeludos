@@ -16,42 +16,34 @@ public class SelectDog : MonoBehaviour
         aRCamera = GameObject.Find("XR Origin").GetComponentInChildren<Camera>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Detectar el toque en la pantalla
         if (Input.touchCount > 0)
         {
-            Touch touch = Input.GetTouch(0);  // Obtener el primer toque
-            if (touch.phase == TouchPhase.Began)  // Cuando el toque comienza
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
             {
-                // Convertir la posición del toque a un punto en el mundo 3D
                 Ray ray = aRCamera.ScreenPointToRay(touch.position);
                 RaycastHit hit;
 
-                // Hacer el raycast
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, dogLayer))
                 {
-                    // Si el raycast golpea el perro (el objeto con el collider)
-                    DogAction(hit.transform.gameObject);  // Llamar a la acción en el perro
+                    DogAction(hit.transform.gameObject);
                     Debug.Log("ME TOCASTE :O");
                 }
             }
         }
     }
 
-    // Acción que se ejecuta cuando se toca el perro
     private void DogAction(GameObject dog)
     {
         if (actionsVisible == false)
         {
-            //Debug.Log("¡El perro ha sido tocado!");
             actions.SetActive(true);
             actionsVisible = true;
         }
         else if (actionsVisible == true) 
         {
-            //Debug.Log("¡El perro ha sido tocado!");
             actions.SetActive(false);
             actionsVisible = false;
         }

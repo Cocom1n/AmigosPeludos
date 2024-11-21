@@ -27,6 +27,5 @@ public class AbrirLibro : MonoBehaviour
     public void CerrarLibro()
     {
         PanelLibro.SetActive(false);
-        PanelPrincipal.SetActive(true);
     }
 }
