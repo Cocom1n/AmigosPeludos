@@ -183,9 +183,21 @@ PrefabInstance:
       propertyPath: aRCamera
       value: 
       objectReference: {fileID: 960674280}
+    - target: {fileID: 329427159514380130, guid: b66585dd2184d2d439bd8bce8f46b940, type: 3}
+      propertyPath: velocidad
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 329427159514380130, guid: b66585dd2184d2d439bd8bce8f46b940, type: 3}
+      propertyPath: rotacionVelocidad
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 513392448961046973, guid: b66585dd2184d2d439bd8bce8f46b940, type: 3}
       propertyPath: m_Name
       value: AmigosPeludos
+      objectReference: {fileID: 0}
+    - target: {fileID: 513392448961046973, guid: b66585dd2184d2d439bd8bce8f46b940, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1352380910948013407, guid: b66585dd2184d2d439bd8bce8f46b940, type: 3}
       propertyPath: m_Name
@@ -201,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3978465195513960101, guid: b66585dd2184d2d439bd8bce8f46b940, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -657
+      value: -127
       objectReference: {fileID: 0}
     - target: {fileID: 4868761814936654779, guid: b66585dd2184d2d439bd8bce8f46b940, type: 3}
       propertyPath: m_LocalPosition.x

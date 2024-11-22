@@ -6,7 +6,8 @@ public class AbrirLibro : MonoBehaviour
 {
     [SerializeField] private GameObject PanelLibro;
     [SerializeField] private GameObject PanelPrincipal;
-    // Start is called before the first frame update
+    [SerializeField] private AudioSource hoja;
+
     void Start()
     {
    
@@ -21,6 +22,7 @@ public class AbrirLibro : MonoBehaviour
     public void AbirLibro()
     {
         PanelLibro.SetActive(true);
+        hoja.Play();
         PanelPrincipal.SetActive(false);
     }
 
