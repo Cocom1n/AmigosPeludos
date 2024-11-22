@@ -20,7 +20,7 @@ public class ObjectManipulator : MonoBehaviour
 
     void Start()
     {
-        
+        aRCamera = GameObject.Find("XR Origin").GetComponentInChildren<Camera>();
     }
 
     void Update()

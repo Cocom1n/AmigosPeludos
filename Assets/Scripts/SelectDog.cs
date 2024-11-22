@@ -29,7 +29,6 @@ public class SelectDog : MonoBehaviour
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, dogLayer))
                 {
                     DogAction(hit.transform.gameObject);
-                    Debug.Log("ME TOCASTE :O");
                 }
             }
         }
@@ -47,19 +46,5 @@ public class SelectDog : MonoBehaviour
             actions.SetActive(false);
             actionsVisible = false;
         }
-
-        //// Ejemplo: activar una animación o sonido
-        //Animator dogAnimator = dog.GetComponent<Animator>();
-        //if (dogAnimator != null)
-        //{
-        //    dogAnimator.SetTrigger("Bark");  // Activar animación de ladrido (supone que tienes una animación configurada)
-        //}
-
-        //// Ejemplo: reproducir un sonido
-        //AudioSource audioSource = dog.GetComponent<AudioSource>();
-        //if (audioSource != null)
-        //{
-        //    audioSource.Play();  // Reproducir sonido
-        //}
     }
 }

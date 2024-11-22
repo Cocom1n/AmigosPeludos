@@ -8,17 +8,6 @@ public class AbrirLibro : MonoBehaviour
     [SerializeField] private GameObject PanelPrincipal;
     [SerializeField] private AudioSource hoja;
 
-    void Start()
-    {
-   
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void AbirLibro()
     {
         PanelLibro.SetActive(true);
