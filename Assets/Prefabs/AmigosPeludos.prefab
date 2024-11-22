@@ -6288,7 +6288,7 @@ PrefabInstance:
       objectReference: {fileID: 8867288985468954994}
     - target: {fileID: 2091407936510245037, guid: 58ced539c013dab46a8a4af281cd1184, type: 3}
       propertyPath: velocidad
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2091407936510245037, guid: 58ced539c013dab46a8a4af281cd1184, type: 3}
       propertyPath: puntos.Array.size

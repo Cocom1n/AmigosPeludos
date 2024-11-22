@@ -39,16 +39,19 @@ public class MoverPerro : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, dogLayer))
                 {
-                    if (isMoving)
+                    if (hit.transform.gameObject == perro)
                     {
-                        isMoving = false;
-                        animacionPerro.SetInteger("AnimationID", 0);
-                    }
-                    else
-                    {
-                        isMoving = true;
-                        animacionPerro.SetInteger("AnimationID", 2);
-                        MoveTowardsPoint(puntos[currentPointIndex]);
+                        if (isMoving)
+                        {
+                            isMoving = false;
+                            animacionPerro.SetInteger("AnimationID", 0);
+                        }
+                        else
+                        {
+                            isMoving = true;
+                            animacionPerro.SetInteger("AnimationID", 2);
+                            MoveTowardsPoint(puntos[currentPointIndex]);
+                        }
                     }
                 }
             }
